@@ -1,6 +1,6 @@
 local Plug = vim.fn['plug#']
 
-vim.call('plug#begin', '~/AppData/Local/nvim/plugged')
+vim.call('plug#begin')
 	Plug 'gruvbox-community/gruvbox'
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'williamboman/nvim-lsp-installer'
