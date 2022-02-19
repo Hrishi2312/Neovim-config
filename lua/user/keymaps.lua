@@ -26,3 +26,5 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("i", "ii", "<Esc>", opts)
 
 keymap("v", "p", '"_dP', opts)
+
+keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)

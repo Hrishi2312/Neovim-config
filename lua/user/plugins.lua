@@ -15,6 +15,7 @@ vim.call('plug#begin')
 	Plug 'rafamadriz/friendly-snippets'
 	Plug 'cohama/lexima.vim'
 	Plug 'akinsho/toggleterm.nvim'
+	Plug 'mbbill/undotree'
 	Plug('glacambre/firenvim', {
 		['do'] = function()
 			vim.call('firenvim#install', '0')
