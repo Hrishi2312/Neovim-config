@@ -24,7 +24,14 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 keymap("i", "ii", "<Esc>", opts)
+keymap("i", "II", "<Esc>", opts)
+keymap("v", "ii", "<Esc>", opts)
+keymap("v", "II", "<Esc>", opts)
 
 keymap("v", "p", '"_dP', opts)
 
 keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
+
+keymap("n", "<leader>tg", ":lua _LAZYGIT_TOGGLE()<CR>", opts)
+keymap("n", "<leader>tn", ":lua _NODE_TOGGLE()<CR>", opts)
+keymap("n", "<leader>tp", ":lua _PYTHON_TOGGLE()<CR>", opts)
