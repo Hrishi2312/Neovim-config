@@ -16,6 +16,8 @@ local options = {
 	tabstop = 2,
 	signcolumn = "yes",
 	scrolloff = 8,
+	spell = true,
+	spelllang = {'en_us'}
 }
 
 for key, value in pairs(options) do

@@ -68,8 +68,11 @@ cmp.setup {
 			nvim_lsp = "[LSP]",
 			nvim_lua = "[API]",
 			luasnip = "[Snippet]",
+			nvim_lsp_signature_help = "[Signature]",
 			buffer = "[Buffer]",
 			path = "[Path]",
+			calc = "[Calc]",
+			spell = "[Spell]",
 		})[entry.source.name]
 		return vim_item
 	end,
@@ -78,8 +81,11 @@ cmp.setup {
 		{name = "nvim_lua"},
 		{name = "nvim_lsp"},
 		{name = "luasnip"},
+		{name = "nvim_lsp_signature_help"},
 		{name = "buffer"},
 		{name = "path"},
+		{name = "calc"},
+		{name = "spell"},
 	},
 	confirm_opts = {
 		behavior = cmp.ConfirmBehavior.Replace,
