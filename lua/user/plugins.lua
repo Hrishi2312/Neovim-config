@@ -20,9 +20,4 @@ vim.call('plug#begin')
 	Plug 'akinsho/toggleterm.nvim'
 	Plug 'mbbill/undotree'
 	Plug 'vimwiki/vimwiki'
-	Plug('glacambre/firenvim', {
-		['do'] = function()
-			vim.call('firenvim#install', '0')
-		end
-	})
 vim.call('plug#end')
