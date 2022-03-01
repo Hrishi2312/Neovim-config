@@ -20,4 +20,5 @@ vim.call('plug#begin')
 	Plug 'akinsho/toggleterm.nvim'
 	Plug 'mbbill/undotree'
 	Plug 'vimwiki/vimwiki'
+	Plug 'kyazdani42/nvim-tree.lua'
 vim.call('plug#end')
