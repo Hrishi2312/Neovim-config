@@ -1,7 +1,5 @@
 local opts = {noremap = true, silent = true}
 
-local term_opts = {silent = true}
-
 local keymap = vim.api.nvim_set_keymap
 
 keymap("", "<Space>", "<Nop>", opts)
@@ -26,6 +24,13 @@ keymap("v", "ii", "<Esc>", opts)
 keymap("v", "II", "<Esc>", opts)
 
 keymap("v", "p", '"_dP', opts)
+
+keymap("n", "<A-j>", ":m .+1<CR>==", opts)
+keymap("n", "<A-k>", ":m .-2<CR>==", opts)
+keymap("i", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
+keymap("i", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
+keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
+keymap("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 
 keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
 
