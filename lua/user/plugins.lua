@@ -1,6 +1,7 @@
 local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
+	Plug 'RRethy/nvim-base16'
 	Plug 'gruvbox-community/gruvbox'
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'williamboman/nvim-lsp-installer'

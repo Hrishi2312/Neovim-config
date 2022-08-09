@@ -91,5 +91,7 @@ cmp.setup {
 		behavior = cmp.ConfirmBehavior.Replace,
 		select = false,
 	},
-	documentation = true,
+	window = {
+		documentation = true,
+	}
 }
