@@ -32,6 +32,9 @@ keymap("i", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 
+keymap("n", "<leader>xd", ":%!xxd<CR>", opts)
+keymap("n", "<leader>xr", ":%!xxd -r<CR>", opts)
+
 keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
 
 keymap("n", "<leader>tg", ":lua _LAZYGIT_TOGGLE()<CR>", opts)
